@@ -23,6 +23,7 @@ class Exp(MyExp):
         self.flip_prob = 0.5
         self.print_interval = 1
         self.eval_interval = 1
+        self.data_num_workers = 4
 
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
 
