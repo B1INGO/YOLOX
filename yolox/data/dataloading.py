@@ -21,6 +21,7 @@ def get_yolox_datadir():
     this function will return value of the environment variable. Otherwise, use data
     """
     yolox_datadir = os.getenv("YOLOX_DATADIR", None)
+
     if yolox_datadir is None:
         import yolox
 

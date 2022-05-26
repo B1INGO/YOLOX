@@ -83,7 +83,7 @@ def make_parser():
     parser.add_argument(
         "-l",
         "--logger",
-        type=str,
+        type=str,-
         help="Logger to be used for metrics",
         default="tensorboard"
     )
