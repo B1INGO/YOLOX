@@ -44,7 +44,7 @@ class Exp(MyExp):
 
         with wait_for_the_master(local_rank):
             dataset = VOCDetection(
-                data_dir="/content/YOLOX",
+                data_dir="/content/YOLOX/head",
                 image_sets=["train"],
                 img_size=self.input_size,
                 preproc=TrainTransform(
@@ -102,7 +102,7 @@ class Exp(MyExp):
         from yolox.data import VOCDetection, ValTransform
 
         valdataset = VOCDetection(
-            data_dir="/content/YOLOX\\",
+            data_dir="/content/YOLOX/head",
             image_sets=["val"],
             img_size=self.test_size,
             preproc=ValTransform(legacy=legacy),
